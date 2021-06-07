@@ -18,7 +18,7 @@ export function App() {
   }
 
   const handleOperator = (e) => {
-    // If state is the result of previous equation (handleCalc), remove beginning blank space so that a number press does not erase equation.
+    // If state is the result of previous equation (handleCalc), remove beginning blank space so that (handleNumber) does not erase equation.
     if (result[0] === ' ') {
       setResult(result.substring(1) + e.target.textContent)
     } else {
